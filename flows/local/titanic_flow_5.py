@@ -45,6 +45,8 @@ class TFlow5(FlowSpec):
 
         self.grid_points = np.arange(1, 9)
 
+    #the foreach argument can be passed anything that has a list format. In this case, an array, so you can iterate
+    #for every item in the list, regardless of how long the list is 
         self.next(self.model3, foreach='grid_points')
 
     @step

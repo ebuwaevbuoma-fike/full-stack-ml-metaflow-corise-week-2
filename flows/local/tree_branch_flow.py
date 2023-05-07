@@ -18,6 +18,7 @@ class Branch_Flow(FlowSpec):
         self.iris = datasets.load_iris()
         self.X = self.iris['data']
         self.y = self.iris['target']
+        #this specifies that the branch opens into three models, which run one after the other
         self.next(self.rf_model, self.xt_model, self.dt_model)
     
                 
